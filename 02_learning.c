@@ -18,12 +18,15 @@ int main()
 
     int a = 1;
     printf("Size of int is %d", sizeof(a));
+    //%d for integer input/output
 
     float b = 1.1;
     printf("\nsize of float is %d", sizeof(b));
+    //%f for float input/output
 
     char c = 'k';
     printf("\nSize of char is %d", sizeof(c));
+    //%c for character input/output
 
     return 0;
 }
