@@ -6,7 +6,6 @@ int main()
 
     int length = 12, Breadth = 15;
 
-
     int Area = length * Breadth; // Calculation of area
 
     // printing the result

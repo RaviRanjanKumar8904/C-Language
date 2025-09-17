@@ -10,12 +10,21 @@ int main()
     int factorial = 1;
 
     
-    for (int i = 1; i <= num; i++)
+   if (num < 1)
     {
-        factorial *= i;
+        printf("Invalid Entry!\n\nRemember it!\nFactorial is calculated only for Positive Number.");
+    }
+    else
+    {
+
+        for (int i = 1; i <= num; i++)
+        {
+            factorial *= i;
+        }
+         printf("Factorial of %d is %d", num, factorial);
     }
 
-    printf("Factorial of %d is %d", num, factorial);
+   
 
     return 0;
 }

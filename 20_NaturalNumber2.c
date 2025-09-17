@@ -5,12 +5,19 @@ int main()
     printf("Print Natural Number upto: ");
     scanf("%d", &i);
 
-    do
+    if (i < 1)
     {
-        printf("%d\n", n);
-        n++;
-        i--;
-    } while (i >= 1);
+        printf("Invaid Entry!\n\nREMBEMBER!\nNatural Number is starting from 1.");
+    }
+    else
+    {
+        do
+        {
+            printf("%d\n", n);
+            n++;
+            i--;
+        } while (i >= 1);
+    }
 
     return 0;
 }

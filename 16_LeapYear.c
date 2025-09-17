@@ -6,31 +6,45 @@ int main()
     printf("Year: ");
     scanf("%d", &year);
 
-    // applying logic
-    if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))
+    if (year < 1)
     {
-        printf("%d is leap Year.",year);
+        printf("Invaild Entry!");
     }
     else
     {
-        printf("%d is not leap Year.",year);
-    }
 
-    
+        // applying logic
+        if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))
+        {
+            printf("%d is leap Year.", year);
+        }
+        else
+        {
+            printf("%d is not leap Year.", year);
+        }
+    }
 
     printf("\n\n\n");
     // using if else ladder
-    if (year % 400 == 0)
+
+    if (year < 1)
     {
-        printf("Leap Year.");
-    }
-    else if(year % 4 == 0 && year % 100 != 100)
-    {
-        printf("Leap Year.");
+        printf("Invaild Entry!");
     }
     else
     {
-        printf("Not Leap Year");
+        if (year % 400 == 0)
+        {
+            printf("%d is Leap Year.", year);
+        }
+        else if (year % 4 == 0 && year % 100 != 100)
+        {
+            printf("%d is Leap Year.", year);
+        }
+        else
+        {
+            printf("%d is Not Leap Year", year);
+        }
     }
 
     return 0;

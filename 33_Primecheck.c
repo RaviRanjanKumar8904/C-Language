@@ -8,21 +8,30 @@ int main()
 
     // logic
     int check = 0;
-    for (int i = 1; i <= num; i++)
+    if (num < 1)
     {
-        if (num % i == 0)
-        {
-            check += 1;
-        }
-    }
-
-    if (check > 2)
-    {
-        printf("It's a Not a Prime Number");
+        printf("Invalid Entry!\n\nRemember!\nWrite Positive Number.");
     }
     else
     {
+
+        for (int i = 1; i <= num; i++)
+        {
+            if (num % i == 0)
+            {
+                check++;
+            }
+        }
+    }
+
+    if (check <= 2)
+    {
         printf("It's a Prime Number.");
+        
+    }
+    else
+    {
+        printf("It's a Not a Prime Number");
     }
 
     return 0;

@@ -8,13 +8,21 @@ int main()
 
     // logic;
     int current = 0, rev = 1, printint;
-    for (int i = 1; i <= num; i++)
+    if (num < 1)
+    {
+        printf("Invalid Entry!\nEnter Positive Value.");
+    }
+    else
     {
 
-        printf(" %d", current);
-        printint = current + rev;
-        rev = current;
-        current = printint;
+        for (int i = 1; i <= num; i++)
+        {
+
+            printf(" %d", current);
+            printint = current + rev;
+            rev = current;
+            current = printint;
+        }
     }
 
     return 0;

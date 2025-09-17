@@ -1,20 +1,26 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
     int n;
     printf("Add Natural Number Upto: ");
-    scanf("%d",&n);
-    printf("Sum of First %d Natural Number is : ",n);
-    //logic
+    scanf("%d", &n);
+    printf("Sum of First %d Natural Number is : ", n);
+    // logic
     int sum = 0;
-    while(n >= 1)
+
+    if (n < 1)
     {
-        sum += n;
-        n--;
+        printf("Invaid Entry!\n\nREMBEMBER!\nNatural Number is starting from 1.");
     }
-    printf("%d",sum);
+    else
+    {
+        while (n >= 1)
+        {
+            sum += n;
+            n--;
+        }
+    }
+    printf("%d", sum);
 
     return 0;
-
-    
 }

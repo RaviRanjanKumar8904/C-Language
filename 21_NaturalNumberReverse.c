@@ -6,11 +6,17 @@ int main()
     scanf("%d", &n);
     int copyN = n;
     // LOGIC
-    for (int i = 0; i < copyN; i++)
+    if (n < 1)
     {
-        printf("%d\n", n);
-        n--;
+        printf("Invaid Entry!\n\nREMBEMBER!\nNatural Number is starting from 1.");
     }
-
+    else
+    {
+        for (int i = 0; i < copyN; i++)
+        {
+            printf("%d\n", n);
+            n--;
+        }
+    }
     return 0;
 }
