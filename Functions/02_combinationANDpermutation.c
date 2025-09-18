@@ -20,6 +20,17 @@ int main()
     printf("Enter r: ");
     scanf("%d", &r); // take r
 
+    if (n < 0 || r < 0) // filter negative values
+    {
+        printf("Error! \nMessage: Must be greater than 0");
+        return 1; // exit with error message
+    }
+    else if (n < r) // check what n is greater than r or not?
+    {
+        printf("Error! \nMessage: Value of n is always greater than r.");
+        return 1;
+    }
+
     long Combination = factorial(n) / (factorial(r) * factorial(n - r)); //   n!/(r! * (n-r)!)
     printf("\nCombination :: %d", Combination);
 
