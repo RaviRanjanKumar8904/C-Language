@@ -15,7 +15,7 @@ int main()
             printf("%d is divided by both 3 and 5", NumTray1);
         }
 
-        printf("%d is not divided by both 3 and 5", NumTray1);
+        printf("%d is not divided by both 3 and 5", NumTray1); 
     }
     else
     {
